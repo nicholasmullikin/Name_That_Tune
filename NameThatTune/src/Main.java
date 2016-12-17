@@ -22,7 +22,7 @@ Yes, we used Princeton’s stdaudio and stddraw files to create this project. Ot
 import java.io.PrintWriter;
 import java.io.IOException;
 import java.util.*;
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         StdDraw.setCanvasSize(1380, 820);
         StdDraw.setXscale(-1.6829, 1.6829);
@@ -164,8 +164,8 @@ public class Main {
 
         StdAudio.save("song.wav", totalsong);
         System.out.println("here");
-        System.out.println(totalsong.length);
-        System.out.println(theDurationsTot.length);
+        System.out.println("Total song length"+totalsong.length);
+        System.out.println("Total"+theDurationsTot.length);
         printWriter.close ();
         StdAudio.play(totalsong, theDurationsTot, notearray, .1);
     }

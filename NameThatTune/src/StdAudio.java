@@ -16,8 +16,6 @@
 
 
 import java.applet.AudioClip;
-
-import java.util.*;
 import java.applet.Applet;
 import java.io.File;
 import java.io.ByteArrayInputStream;
@@ -255,7 +253,7 @@ public final class StdAudio {
         byte[] data = new byte[2 * samples.length];
         for (int i = 0; i < samples.length; i++) {
             int temp = (short) (samples[i] * MAX_16_BIT);
-            data[2*i + 0] = (byte) temp;
+            data[2*i] = (byte) temp;
             data[2*i + 1] = (byte) (temp >> 8);
         }
         // now save the file
